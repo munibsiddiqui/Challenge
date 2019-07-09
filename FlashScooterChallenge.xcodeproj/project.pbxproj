@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B5FDA46F22D453D800A43FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FDA46E22D453D800A43FCD /* AppDelegate.swift */; };
-		B5FDA47122D453D800A43FCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FDA47022D453D800A43FCD /* ViewController.swift */; };
+		B5FDA47122D453D800A43FCD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FDA47022D453D800A43FCD /* MapViewController.swift */; };
 		B5FDA47422D453D800A43FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FDA47222D453D800A43FCD /* Main.storyboard */; };
 		B5FDA47622D453E300A43FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FDA47522D453E300A43FCD /* Assets.xcassets */; };
 		B5FDA47922D453E300A43FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FDA47722D453E300A43FCD /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		B5FDA46B22D453D800A43FCD /* FlashScooterChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashScooterChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FDA46E22D453D800A43FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5FDA47022D453D800A43FCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5FDA47022D453D800A43FCD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5FDA47322D453D800A43FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5FDA47522D453E300A43FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5FDA47822D453E300A43FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 		B5FDA46D22D453D800A43FCD /* FlashScooterChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				B5FDA46E22D453D800A43FCD /* AppDelegate.swift */,
-				B5FDA47022D453D800A43FCD /* ViewController.swift */,
+				B5FDA48E22D4545D00A43FCD /* AppDelegate */,
+				B5FDA49322D454D600A43FCD /* Map */,
 				B5FDA47222D453D800A43FCD /* Main.storyboard */,
 				B5FDA47522D453E300A43FCD /* Assets.xcassets */,
 				B5FDA47722D453E300A43FCD /* LaunchScreen.storyboard */,
@@ -94,6 +94,38 @@
 				B5FDA48522D453E300A43FCD /* Info.plist */,
 			);
 			path = FlashScooterChallengeTests;
+			sourceTree = "<group>";
+		};
+		B5FDA48E22D4545D00A43FCD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B5FDA46E22D453D800A43FCD /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B5FDA49022D4549600A43FCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5FDA47022D453D800A43FCD /* MapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5FDA49222D454B500A43FCD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5FDA49322D454D600A43FCD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B5FDA49222D454B500A43FCD /* ViewModel */,
+				B5FDA49022D4549600A43FCD /* View */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FDA47122D453D800A43FCD /* ViewController.swift in Sources */,
+				B5FDA47122D453D800A43FCD /* MapViewController.swift in Sources */,
 				B5FDA46F22D453D800A43FCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

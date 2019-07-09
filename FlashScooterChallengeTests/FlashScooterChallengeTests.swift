@@ -2,7 +2,7 @@
 //  FlashScooterChallengeTests.swift
 //  FlashScooterChallengeTests
 //
-//  Created by Gaditek on 09/07/2019.
+//  Created by Munib Siddiqui on 09/07/2019.
 //  Copyright © 2019 Munib Siddiqui. All rights reserved.
 //
 
