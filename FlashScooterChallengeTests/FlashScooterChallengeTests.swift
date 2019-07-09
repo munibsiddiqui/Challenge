@@ -11,7 +11,10 @@ import XCTest
 
 class FlashScooterChallengeTests: XCTestCase {
 
+    var viewModel : MapViewModel? = nil
+    
     override func setUp() {
+        viewModel = MapViewModel()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -19,16 +22,21 @@ class FlashScooterChallengeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func testVehicle_AllVehicle () {
+        
+        // Create an expectation
+        let expectation = self.expectation(description: "FetchingVehicles")
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        viewModel?.fetchAllVehicles {
+            
+             expectation.fulfill()
         }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssertTrue((viewModel?.vehicles.count)! > 0, "No Vehicles Found");
+
     }
 
+    
 }
